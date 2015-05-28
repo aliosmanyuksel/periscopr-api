@@ -16,7 +16,7 @@
         }
 
         /**
-         * Test that fetching followes for the current
+         * Test that fetching followers for the current
          * user id returns the correct response with an
          * array of User models in results
          */

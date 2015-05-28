@@ -12,5 +12,6 @@ class GetFollowingUsers extends BaseRequest {
         $this->parameters = [
             'user_id' => $user_id
         ];
+        $this->response = "Cjhbtn\\Periscopr\\Responses\\GetFollowingUsers";
     }
 }
