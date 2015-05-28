@@ -35,6 +35,9 @@ abstract class BaseResponse implements ApiResponse {
             if (is_array($value) && !empty($value['class_name'])) {
                 $value = $this->getModel($value['class_name'], $value);
             }
+            elseif (is_array($value) && !empty($value[0]) && is_array($value[0]) && !empty($value[0]['class_name'])) {
+                $value = $this->getArrayOfModels($value);
+            }
             if (is_numeric($key)) {
                 $this->results[$key] = $value;
             }
@@ -53,6 +56,22 @@ abstract class BaseResponse implements ApiResponse {
      */
     protected function getModel($name, $values) {
         $class_name = "\\Cjhbtn\\Periscopr\\Models\\" . $name;
+
         return $class_name::create($values);
     }
+
+    /**
+     * Returns an array of Models
+     *
+     * @param $array
+     * @return array
+     */
+    protected function getArrayOfModels($array) {
+        $models = [ ];
+        foreach ($array as $id => $value) {
+            $models[] = $this->getModel($value['class_name'], $value);
+        }
+        return $models;
+    }
+
 }
