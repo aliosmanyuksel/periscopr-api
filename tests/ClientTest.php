@@ -39,24 +39,6 @@
             $this->assertEquals(401, $response->getStatusCode());
         }
 
-        /**
-         * Test to see if a valid LoginTwitter request
-         * returns the expected response and contains a cookie
-         */
-        public function testValidLoginTwitterRequestReturnsSuccess() {
-            $response = $this->client->execute(
-                new \Cjhbtn\Periscopr\Requests\LoginTwitter(
-                    getenv('OAUTH_TOKEN'),
-                    getenv('OAUTH_TOKEN_SECRET'),
-                    getenv('TWITTER_USER_ID'),
-                    getenv('TWITTER_USERNAME')
-                )
-            );
-            $this->assertEquals(200, $response->getStatusCode());
-            $this->assertInstanceOf("Cjhbtn\\Periscopr\\Responses\\LoginTwitter", $response);
-            $this->assertNotEmpty($response->cookie);
-        }
-
     }
 
 

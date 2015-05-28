@@ -17,7 +17,9 @@
          */
         public function setUp()
         {
-            Dotenv::load(__DIR__ . '/../');
+            if (file_exists(__DIR__ . '/../.env')) {
+                Dotenv::load(__DIR__ . '/../');
+            }
             $this->client = new \Cjhbtn\Periscopr\Client();
             if ($this->requiresAuth && !$this->setUpAuth()) {
                 $this->markTestSkipped("Authenticated test skipped - Unable to authenticate with Periscope API");
