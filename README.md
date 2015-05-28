@@ -101,7 +101,7 @@ Which should output data like so:
 
 TODO - More in-depth documentation will be provided inside the Repository at a later date..
 
-There are some example scripts located within the examples/ directory which should be a good starting point for developing around this library.
+There are some example scripts showing how to use this library located in the repository: [cjhbtn/periscopr-examples](https://bitbucket.org/cjhbtn/periscopr-examples)
 
 ----------
 
