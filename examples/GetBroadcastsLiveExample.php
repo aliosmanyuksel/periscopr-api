@@ -9,7 +9,7 @@
      *
      * On average, there are around 100-200 Periscope streams active
      * at any one time (May 2015).
-     * 
+     *
      */
 
     require_once __DIR__ . '/../vendor/autoload.php';
