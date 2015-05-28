@@ -8,8 +8,8 @@
         /** @var boolean $requiresAuth */
         protected $requiresAuth = true;
 
-        /** @var string $cookie */
-        protected $cookie;
+        /** @var string $user_id */
+        protected $user_id;
 
         /**
          * PHPUnit Setup Function
@@ -42,6 +42,7 @@
             if ($loginResponse->getStatusCode() == 200)
             {
                 $this->client->setCookie($loginResponse->cookie);
+                $this->user_id = $loginResponse->user->id;
                 return true;
             }
             return false;
