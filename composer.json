@@ -1,0 +1,24 @@
+{
+  "name": "cjhbtn/periscopr",
+  "description": "A library for interacting with the Periscope API",
+  "minimum-stability": "beta",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Chris Hogben",
+      "email": "me@cjh.im"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.0",
+    "vlucas/phpdotenv": "1.0.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cjhbtn\\Periscopr\\": "src/"
+    }
+  }
+}
