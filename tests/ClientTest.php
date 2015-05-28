@@ -34,7 +34,7 @@
          */
         public function testBlankLoginTwitterRequestReturns401() {
             $response = $this->client->execute(
-                new \Cjhbtn\Periscopr\Requests\LoginTwitter("", "", "", "")
+                new \Cjhbtn\Periscopr\Requests\LoginTwitter("", "", "")
             );
             $this->assertEquals(401, $response->getStatusCode());
         }

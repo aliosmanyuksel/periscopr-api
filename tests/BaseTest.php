@@ -35,7 +35,6 @@
             $loginRequest = new \Cjhbtn\Periscopr\Requests\LoginTwitter(
                 getenv('OAUTH_TOKEN'),
                 getenv('OAUTH_TOKEN_SECRET'),
-                getenv('TWITTER_USER_ID'),
                 getenv('TWITTER_USERNAME')
             );
             $loginResponse = $this->client->execute($loginRequest);
