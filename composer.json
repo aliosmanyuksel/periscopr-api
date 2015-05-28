@@ -3,7 +3,7 @@
   "type": "library",
   "description": "A library for interacting with the Periscope (https://periscope.tv) API",
   "keywords": ["periscope", "api"],
-  "homepage": "http://github.com/cjhbtn/periscopr-api",
+  "homepage": "https://bitbucket.org/cjhbtn/periscopr-api",
   "license": "Apache 2.0",
   "authors": [
     {
