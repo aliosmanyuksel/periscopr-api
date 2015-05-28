@@ -17,11 +17,11 @@
          * the correct response and a User model
          */
         public function testGetUserReturnsSuccess() {
-            $userRequest = new \Cjhbtn\Periscopr\Requests\GetUser("1104970");
+            $userRequest = new \Cjhbtn\Periscopr\Requests\GetUser($this->user_id);
             $response = $this->client->execute($userRequest);
             $this->assertEquals(200, $response->getStatusCode());
             $this->assertInstanceOf('Cjhbtn\\Periscopr\\Responses\\GetUser', $response);
             $this->assertInstanceOf('Cjhbtn\\Periscopr\\Models\\User', $response->user);
-            $this->assertEquals("1104970", $response->user->id);
+            $this->assertEquals($this->user_id, $response->user->id);
         }
     }
