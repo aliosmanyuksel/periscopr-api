@@ -1,17 +1,22 @@
 {
-  "name": "cjhbtn/periscopr",
-  "description": "A library for interacting with the Periscope API",
-  "minimum-stability": "beta",
+  "name": "cjhbtn/periscopr-api",
+  "type": "library",
+  "description": "A library for interacting with the Periscope (https://periscope.tv) API",
+  "keywords": ["periscope", "api"],
+  "homepage": "http://github.com/cjhbtn/periscopr-api",
   "license": "Apache 2.0",
   "authors": [
     {
       "name": "Chris Hogben",
-      "email": "me@cjh.im"
+      "email": "me@cjh.im",
+      "homepage": "http://cjh.im",
+      "role": "Developer"
     }
   ],
   "require": {
+    "php": ">=5.4.0",
     "guzzlehttp/guzzle": "^6.0",
-    "vlucas/phpdotenv": "1.0.6"
+    "vlucas/phpdotenv": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.6"
