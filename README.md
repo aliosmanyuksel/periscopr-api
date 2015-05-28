@@ -44,7 +44,7 @@ all future requests.
 
 ----------
 
-To start, install this library via Composer (soon!):
+To start, install this library via Composer:
 
     composer.phar require cjhbtn/periscopr-api
 
