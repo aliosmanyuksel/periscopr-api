@@ -4,5 +4,4 @@ class GetLiveBroadcasts extends BaseResponse {
 
     /** @var array $results */
     public $results = [ ];
-
 }

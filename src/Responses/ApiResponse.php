@@ -1,7 +1,5 @@
 <?php namespace Cjhbtn\Periscopr\Responses;
 
-use stdClass;
-
 interface ApiResponse {
 
     public function getStatusCode();

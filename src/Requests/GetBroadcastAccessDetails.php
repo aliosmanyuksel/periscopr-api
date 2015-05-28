@@ -12,5 +12,6 @@ class GetBroadcastAccessDetails extends BaseRequest {
         $this->parameters = [
             'broadcast_id' => $broadcast_id
         ];
+        $this->response = "Cjhbtn\\Periscopr\\Responses\\GetBroadcastAccessDetails";
     }
 }
