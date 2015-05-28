@@ -12,5 +12,6 @@ class GetBroadcasts extends BaseRequest {
         $this->parameters = [
             'broadcast_ids' => (array) $id_list
         ];
+        $this->response = "Cjhbtn\\Periscopr\\Responses\\GetBroadcasts";
     }
 }
