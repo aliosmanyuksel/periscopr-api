@@ -12,5 +12,6 @@ class GetBroadcastIDFromShareToken extends BaseRequest {
         $this->parameters = [
             'token' => $share_token
         ];
+        $this->response = "Cjhbtn\\Periscopr\\Responses\\GetBroadcastIDFromShareToken";
     }
 }
