@@ -29,5 +29,6 @@ class Broadcast extends BaseModel {
     public $featured;
     public $sort_score;
     public $is_trusted;
+    public $n_viewers;
 
 }
