@@ -79,8 +79,8 @@ Create a new file, including the Composer autoloader file:
         /* Set our authentication cookie for all future requests */
         $periscopeClient->setCookie($loginResponse->cookie);
     
-        /* Prepare a new GetLiveBroadcasts request */
-        $liveBroadcastsRequest = new Cjhbtn\Periscopr\Requests\GetLiveBroadcasts();
+        /* Prepare a new GetFeedLive request */
+        $liveBroadcastsRequest = new Cjhbtn\Periscopr\Requests\GetFeedLive();
     
         /* Execute the request against the API */
         $liveBroadcastsResponse = $periscopeClient->execute($liveBroadcastsRequest);
