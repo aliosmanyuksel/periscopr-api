@@ -1,7 +1,7 @@
 <?php namespace Cjhbtn\Periscopr\Requests;
 
 /**
- * Class GetFeedLive
+ * Class GetFeedFeatured
  *
  * Retrieve a list of Periscope broadcasts that are featured (i.e. sponsored ??)
  *
