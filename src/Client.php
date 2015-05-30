@@ -4,6 +4,7 @@ use Cjhbtn\Periscopr\Requests\ApiRequest;
 use Cjhbtn\Periscopr\Responses\ApiResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ServerException;
 
 /**
  * Class Client
@@ -65,6 +66,9 @@ class Client {
             }
         }
         catch (ClientException $ex) {
+            $handler->setStatusCode($ex->getCode());
+        }
+        catch (ServerException $ex) {
             $handler->setStatusCode($ex->getCode());
         }
 
