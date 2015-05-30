@@ -1,7 +1,7 @@
 <?php
 
 class UserUnfollowTest extends BaseTest {
-    
+
     /**
      * Test unfollowing a valid Periscope user_id returns true
      */
