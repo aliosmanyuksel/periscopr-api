@@ -2,6 +2,11 @@
 
 use Cjhbtn\Periscopr\Models\BaseModel;
 
+/**
+ * Class BaseResponse
+ *
+ * @package Cjhbtn\Periscopr\Responses
+ */
 abstract class BaseResponse implements ApiResponse {
 
     /** @var integer $statusCode */
@@ -18,6 +23,7 @@ abstract class BaseResponse implements ApiResponse {
 
     /**
      * Return the response HTTP status code
+     *
      * @return integer
      */
     public function getStatusCode() {

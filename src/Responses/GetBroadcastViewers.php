@@ -1,5 +1,10 @@
 <?php namespace Cjhbtn\Periscopr\Responses;
 
+/**
+ * Class GetBroadcastViewers
+ *
+ * @package Cjhbtn\Periscopr\Responses
+ */
 class GetBroadcastViewers extends BaseResponse {
 
     /** @var integer $n_hearts */

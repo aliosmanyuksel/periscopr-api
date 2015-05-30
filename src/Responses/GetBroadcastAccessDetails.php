@@ -1,5 +1,10 @@
 <?php namespace Cjhbtn\Periscopr\Responses;
 
+/**
+ * Class GetBroadcastAccessDetails
+ *
+ * @package Cjhbtn\Periscopr\Responses
+ */
 class GetBroadcastAccessDetails extends BaseResponse {
 
     /** @var string $subscriber */

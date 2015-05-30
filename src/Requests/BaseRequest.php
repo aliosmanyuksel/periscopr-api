@@ -1,5 +1,10 @@
 <?php namespace Cjhbtn\Periscopr\Requests;
 
+/**
+ * Class BaseRequest
+ *
+ * @package Cjhbtn\Periscopr\Requests
+ */
 abstract class BaseRequest implements ApiRequest {
 
     /** @var array $parameters */

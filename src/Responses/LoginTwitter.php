@@ -1,5 +1,10 @@
 <?php namespace Cjhbtn\Periscopr\Responses;
 
+/**
+ * Class LoginTwitter
+ *
+ * @package Cjhbtn\Periscopr\Responses
+ */
 class LoginTwitter extends BaseResponse {
 
     /** @var string $cookie */

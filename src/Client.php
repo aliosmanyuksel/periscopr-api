@@ -5,6 +5,11 @@ use Cjhbtn\Periscopr\Responses\ApiResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\ClientException;
 
+/**
+ * Class Client
+ *
+ * @package Cjhbtn\Periscopr
+ */
 class Client {
 
     /** @var GuzzleClient $guzzle */
