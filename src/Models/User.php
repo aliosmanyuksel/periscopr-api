@@ -19,4 +19,7 @@ class User extends BaseModel {
     public $n_hearts;
     public $n_replay_hearts;
 
+    public $n_hearts_given;
+    public $replay_watched_time;
+
 }
