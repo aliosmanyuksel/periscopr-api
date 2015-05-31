@@ -7,11 +7,11 @@ cjhbtn/periscopr-api
 
 **License**: [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-**Website**: https://bitbucket.org/cjhbtn/periscopr-api
+**Website**: https://github.com/cjhbtn/periscopr-api
 
-**Git Repository**: https://bitbucket.org/cjhbtn/periscopr-api.git
+**Git Repository**: https://github.com/cjhbtn/periscopr-api.git
 
-**Documenation**: https://bitbucket.org/cjhbtn/periscopr-api/wiki/Home
+**Documenation**: https://github.com/cjhbtn/periscopr-api/wiki/Home
 
 ----------
 
@@ -103,7 +103,7 @@ Which should output data like so:
 
 ## Issues ##
 
-Please raise any issues via [Bitbucket](https://bitbucket.org/cjhbtn/periscopr-api/issues)
+Please raise any issues via [Bitbucket](https://github.com/cjhbtn/periscopr-api/issues)
 
 Include as much information as you can about what the issue is, how to reproduce it, and any additional modifications or 3rd-party libraries that you might be using.
 
